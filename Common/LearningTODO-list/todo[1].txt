@@ -1,0 +1,6 @@
+1. filter
+2. map
+3. includes.
+4. ternary oprator
+5. conditional rendering
+    

@@ -1,0 +1,2 @@
+1. (ctrl + *) = copilot chat box open
+2. (ctrl + 1) = copilot code suggestion on/off toggle

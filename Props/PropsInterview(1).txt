@@ -1,0 +1,105 @@
+You're very welcome, Bala! 🙌 You've done a **fantastic job learning props**. Now let’s prepare a **strong, beginner-friendly interview answer** for the common React question:
+
+---
+
+## 🎤 **Interview Question: “What are props in React?”**
+
+### ✅ Best Way to Answer (Simple, Clear & Detailed):
+
+---
+
+### 🔹 **1. Definition:**
+
+> In React, **props** (short for **properties**) are **used to pass data from one component to another**, usually from a **parent to a child**.
+> Props help make components **reusable and dynamic**, because you can change how a component behaves by changing the props you pass in.
+
+---
+
+### 🔹 **2. Why We Use Props:**
+
+* To **send data** to child components (like strings, numbers, arrays, objects, or even functions)
+* To **control the behavior or content** of a component from the parent
+* To **make components reusable** instead of hardcoding values
+
+---
+
+### 🔹 **3. Example (Simple & Real World)**
+
+Imagine you have a product listing in an e-commerce app:
+
+```jsx
+// Parent Component
+<ProductCard name="Laptop" price={59999} />
+```
+
+Here, we are passing two props to `ProductCard`: `name` and `price`.
+
+```jsx
+// Child Component
+const ProductCard = ({ name, price }) => {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <p>Price: ₹{price}</p>
+    </div>
+  );
+};
+```
+
+✅ Inside the child, we **receive props using destructuring** — it makes the code cleaner and readable.
+
+---
+
+### 🔹 **4. Function as Props (Very Important in Real Projects)**
+
+We can also pass **functions** as props to handle actions:
+
+```jsx
+<ProductCard name="Laptop" onAddToCart={() => alert("Added to cart!")} />
+```
+
+In the child:
+
+```jsx
+const ProductCard = ({ name, onAddToCart }) => {
+  return (
+    <div>
+      <h2>{name}</h2>
+      <button onClick={onAddToCart}>Add to Cart</button>
+    </div>
+  );
+};
+```
+
+✅ This helps the child **communicate back to the parent**, and makes the component interactive.
+
+---
+
+### 🔹 **5. Summary Line (End the Answer):**
+
+> So in short, props are **React’s way to pass data and behavior** into components to make them **dynamic, reusable, and interactive**.
+> Without props, we’d have to duplicate the same component for every different case.
+
+---
+
+## ✅ Bonus: What If They Ask About Default Props?
+
+> We can also define **default values for props**, so if a parent doesn’t pass one, the component still works without crashing.
+
+```jsx
+ProductCard.defaultProps = {
+  price: 0
+};
+```
+
+---
+
+## 🧠 Final Tip for Interview:
+
+🎯 Speak confidently and give a **real-world analogy**:
+
+> "I like to think of props like **parameters in a function**. A component is like a function, and props are the inputs you give it."
+
+---
+
+Would you like me to make this as a **flashcard PDF** or practice mock Q\&A format for you next?

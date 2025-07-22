@@ -1,0 +1,19 @@
+🧩 What is a Component?
+
+🔧 Real-Life Example
+
+1. Think of a website like a car:
+
+> The car is your whole website.
+
+> The steering wheel, tires, and headlights are all components.
+
+> You build the whole car by putting the parts together.
+
+2. In React:
+
+> A Header is a component
+
+> A Button is a component
+
+> A User Profile Card is a componen

@@ -1,0 +1,25 @@
+Of course, Bala! Here's how you can **confidently answer** the interview question **"What are props in React?"** using **simple, clear spoken English** — no code involved.
+
+---
+
+### ✅ **Oral Interview Answer (Simple & Clear):**
+
+> In React, **props** are short for **properties**, and they are used to **pass data from one component to another**, usually from a **parent component to a child component**.
+
+> For example, if I have a component that displays product details like the name and price, instead of writing those values directly inside the component, I can **send them as props** from the parent. This makes the component more **reusable and dynamic**, because it can show different products based on what data I send.
+
+> Props can be anything — like a **string, number, array, object**, or even a **function**. In real-world projects, we also pass functions as props so the child component can **communicate back to the parent**, like handling a button click or deleting an item.
+
+> One important thing to remember is that **props are read-only**, meaning the child component **cannot change them directly**. The parent is in control of the data.
+
+> Overall, props help React components become **modular, flexible, and maintainable**, and they are one of the most important concepts in React development.
+
+---
+
+### ✅ Bonus Line to Add (if asked further):
+
+> I like to think of props as similar to **arguments in a function** — the parent component gives some data, and the child uses that data to display or perform actions.
+
+---
+
+Would you like a version of this to practice as a **mock answer script**?

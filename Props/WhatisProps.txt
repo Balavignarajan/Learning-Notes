@@ -1,0 +1,20 @@
+Check this lin = https://www.freecodecamp.org/news/beginners-guide-to-props-in-react/
+
+---------------------------------------------------------------------------------------
+✅ 1. What is Props in React?
+
+Props stands for "properties".
+They are like arguments passed to a function, but here, you pass data to a component.
+
+📦 Think of props as a way to send data from a parent component to a child component.
+
+**✅ 2. Why do we use Props?**
+
+We use props to:
+
+    🔁 Reuse components with different data.
+
+    📤 Send data from one component to another (usually Parent ➜ Child).
+
+    🔍 Keep components dynamic and flexible.
+
