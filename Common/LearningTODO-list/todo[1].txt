@@ -1,6 +1,22 @@
+Skill Set: Familiarity with React, Redux,  Next.js, Node.js, Webpack, Jest, Git, and CSS frameworks like Tailwind or Bootstrap can lead to a higher salary.
+
+# Todo List 
+✅ ❌ ❓
+---------------------------
 1. filter
 2. map
 3. includes.
 4. ternary oprator
 5. conditional rendering
-    
+6. what is rendering and re-rendering ?
+7. useState vs variable ?
+8. component vs function like(class component vs fn component) ?
+9. in react .js vs .jsx file diffrence ?
+10. what is prop drilling and how can you avoid prop drilling ?
+11.  What is ?. (optional chaining)?
+12. useState reusable like i have mulitple useState in one component how to i use useState ? (a single useState with an object.)
+13. Custom Hook ?   
+14. js oprators (!,&&,||) etc..
+15. onChange,onSubmit etc.. like events
+16. input attributes like checked and etc..
+17. Pass data from child to parent?

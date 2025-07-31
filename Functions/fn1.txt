@@ -1,0 +1,33 @@
+**NORMAL FUNCTION VS INLINE FN VS ANONYMOUS FN**
+-------------------------------------------------
+Sure! Here’s a short version:
+
+* **First Example:**
+  Uses an **inline arrow function** (`() => setCount(count + 1)`) directly in the `onClick` handler. It’s simple but creates a new function every time the button is clicked.
+
+* **Second Example:**
+  Uses a **separate named function** (`handleClick`) to handle the click. This is cleaner and better for **reuse** and **maintainability** in larger apps.
+
+### Key Difference:
+
+* **Inline function** is quick and simple.
+* **Named function** is cleaner, especially for more complex actions.
+-------------------------------------------------------------------------------
+**ANONYMOUS FUNCTION**
+An **anonymous function** is a function that **doesn't have a name**. It's typically used as a one-off function, often in places like callbacks or inline expressions.
+
+### Example:
+
+```js
+const greet = function() {
+  console.log("Hello!");
+};
+greet();  // Calls the anonymous function
+```
+
+In this case, `function() { console.log("Hello!"); }` is **anonymous** because it doesn’t have a name.
+
+### Key Point:
+
+* **No name** for the function.
+* Can be used inline or assigned to a variable.

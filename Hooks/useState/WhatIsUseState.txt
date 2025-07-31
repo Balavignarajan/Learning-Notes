@@ -1,0 +1,109 @@
+🧠 1. What is useState in React?
+👉 Simple answer:
+
+useState is a React Hook that lets your component store and manage data (called state).
+
+Think of it like a box inside your component that remembers a value — and when the value changes, your component updates automatically.
+
+🧐 2. Why do we use useState?
+
+Because in React:
+
+We build UI using components.
+
+Components need to remember data, like:
+
+A form input
+
+A counter number
+
+Whether something is visible or hidden
+
+Without useState, the component forgets any changes once it re-renders.\
+
+🗺️ 3. Where do we use it?
+
+Inside functional components in React.
+
+We use it when:
+
+You want your UI to react to some data changes
+
+You want to store temporary values like text, numbers, booleans
+
+🔧 4. How to use useState?
+
+1.
+
+Let’s go step-by-step with a real example 👇
+✅ Step 1: Import useState
+
+import React, { useState } from 'react';
+
+2.
+
+✅ Step 2: Use it in a function component
+
+function Counter() {
+const [count, setCount] = useState(0) ; // 👈 state created
+
+return (
+<div>
+<p>You clicked {count} times</p>
+<button onClick={() => setCount(count + 1)}>Click Me</button>
+</div>
+) ;
+}
+
+3.
+
+🔍 Explanation:
+
+const [count, setCount] = useState(0) ;
+
+count: This is your state variable (starts at 0)
+
+setCount: This is a function to change the value
+
+useState(0): You give it a starting value
+
+🔍 Explanation:
+useState(0) → starts count at 0
+
+setCount(count + 1) → increases value
+
+React re-renders automatically on update
+
+4.
+
+🧠 How it works:
+
+First time, count is 0
+
+When button is clicked, setCount(count + 1) runs
+
+React updates the count
+
+The component re-renders and shows new count
+
+5.
+| Example | What useState stores |
+| --------------- | --------------------------------- |
+| A login form | Username, password, error message |
+| A todo app | List of tasks |
+| A shopping cart | Number of items in cart |
+| Theme toggle | Dark/Light mode (true/false) |
+| Modal | Whether it's open or not |
+
+
+Question to ask useState ?
+1. const [state, setState] = useState(null);
+2. const [state, setState] = useState("");
+3. const [state, setState] = useState(true);
+4. const [state, setState] = useState({});
+5. const [state, setState] = useState([]);
+6. const [state, setState] = useState(0);
+= chick intialValue.txt file
+
+
+

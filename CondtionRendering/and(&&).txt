@@ -1,0 +1,63 @@
+Great question, Bala! Let’s focus on this line:
+
+```jsx
+{show && <p>Hello, welcome to React!</p>}
+```
+
+This is called **conditional rendering** using the **`&&` (AND) operator** in React.
+
+---
+
+## 💡 How it works:
+
+```jsx
+{condition && somethingToRender}
+```
+
+### 🔹 If `condition` is **true**:
+
+✅ It shows `somethingToRender` on the screen.
+
+### 🔹 If `condition` is **false**:
+
+❌ It **does not show anything** — nothing is displayed, not even blank space.
+
+---
+
+## 🧪 Real Example:
+
+### 🟢 When `show = true`:
+
+```jsx
+{true && <p>Hello, welcome to React!</p>}
+```
+
+👉 Output: ✅ You will see this text:
+**"Hello, welcome to React!"**
+
+---
+
+### 🔴 When `show = false`:
+
+```jsx
+{false && <p>Hello, welcome to React!</p>}
+```
+
+👉 Output: ❌ Nothing will be shown. The `<p>` element is **skipped completely**.
+
+---
+
+### ✅ Summary:
+
+| `show` value | What you see            |
+| ------------ | ----------------------- |
+| `true`       | `<p>` is displayed      |
+| `false`      | Nothing is shown at all |
+
+---
+
+This is a **clean and simple way** to show or hide something in React without writing extra if-else statements.
+
+---
+
+Let me know if you want to try this with another element like an image or input box for practice!

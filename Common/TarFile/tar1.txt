@@ -1,0 +1,11 @@
+step 1 = npm run build
+step 2 = tar -czvf wds-build.tar.gz build/   (zip file)
+step 3 = tar -czvf wds-build.tar.gz ~/Downloads/ (move to downloads)
+
+
+
+
+--How To run Tar file--
+step 1 = Extract the tar file
+step 2 = Inside code terminal
+       = npx serve .    (It will give local url to access it).

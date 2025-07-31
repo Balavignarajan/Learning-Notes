@@ -1,0 +1,56 @@
+Great follow-up, Bala! 🔍 Let's understand **what prop drilling is in React** — and how to explain it clearly in interviews or real-world discussions.
+
+---
+
+## 💬 **What is Prop Drilling in React?**
+
+### ✅ Simple Definition:
+
+> **Prop drilling** happens when you need to **pass data from a top-level (parent) component to a deeply nested child**, and you end up passing that data **through many intermediate components** — even though they **don't actually use it**, just pass it down.
+
+---
+
+### 🧠 Real-Life Example (Without Code):
+
+Imagine you have:
+
+* A **main app component**
+* Inside that is a **dashboard**
+* Inside that is a **profile**
+* Inside that is a **username display**
+
+Now, if you want to show the user's name in the **username display**, but the data is only available in the **main app**, you have to **pass the username through dashboard → profile → display**.
+
+Even though **dashboard and profile** don’t care about the username — they still have to **receive it and forward it**.
+👉 That’s **prop drilling**.
+
+---
+
+### ❌ Why Prop Drilling Can Be a Problem:
+
+* It makes code **hard to maintain**.
+* Intermediate components become **cluttered** with props they don’t need.
+* Changes in data flow require **updating many components**.
+
+---
+
+### ✅ How Do We Solve It?
+
+> React provides solutions to avoid prop drilling, like:
+
+* **Context API** – allows you to **share data globally** without passing it manually through every level.
+* **State management tools** like Redux, Zustand, Recoil – useful for large applications.
+
+---
+
+### 🎯 Interview-Ready Answer (Spoken Format):
+
+> Prop drilling in React means passing data through many nested components, even if only the last one needs it. This happens when a parent component has data that needs to be used deep down in the component tree. The problem is that every level in between must receive and pass the data, which makes the code harder to read and maintain. To avoid this, we usually use the Context API or a global state management library like Redux.
+
+---
+
+Let me know if you'd like a **visual diagram or code demo** to help cement this concept!
+
+In own words:
+like you have 4 components
+one main component call listPage then in the page you have child page called moreOption for that child another child name edit packages if you want to send data from list page to edit packaes means yoy first send moreOption then only you send to edit packgaes that is called Prop drilling.

@@ -1,4 +1,5 @@
-Check this lin = https://www.freecodecamp.org/news/beginners-guide-to-props-in-react/
+1.Check this link = https://www.freecodecamp.org/news/beginners-guide-to-props-in-react/
+2. Check this our chatgpt props convo = https://chatgpt.com/share/687f6611-3344-8005-b068-c25d3ce81021
 
 ---------------------------------------------------------------------------------------
 ✅ 1. What is Props in React?

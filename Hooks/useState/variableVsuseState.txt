@@ -1,0 +1,33 @@
+The main difference between a **normal variable** and **`useState`** is that **`useState`** keeps track of changes and makes sure your app re-renders when the value changes, while a normal variable does not.
+
+### Here's the breakdown:
+
+1. **Normal Variable**:
+
+   * It's just a regular value in your code (like `let color = "red";`).
+   * If you change it, nothing in your app updates automatically. React won't know about the change.
+2. **`useState`**:
+
+   * It's a special hook in React that not only stores a value but also **signals React to update the UI** when the value changes.
+   * When you change the state (using the setter function), React re-renders the part of the app that uses that state.
+
+### Example:
+
+* **Normal Variable**:
+
+  ```js
+  let color = "red";
+  color = "blue"; // This changes the value, but React doesn't know about it.
+  ```
+
+* **`useState`**:
+
+  ```js
+  const [color, setColor] = useState("red");
+  setColor("blue"); // This changes the value and updates the UI!
+  ```
+
+### Summary:
+
+* **Normal variable**: No re-render.
+* **`useState`**: Re-renders the app when the value changes.
