@@ -1,0 +1,8 @@
+1. ChatGpt
+2. Deepseek
+3. coPilot
+4. Gemini
+5. Claude
+6. Grok
+7. qwen Chat.
+8.

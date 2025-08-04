@@ -20,3 +20,4 @@ Skill Set: Familiarity with React, Redux,  Next.js, Node.js, Webpack, Jest, Git,
 15. onChange,onSubmit etc.. like events
 16. input attributes like checked and etc..
 17. Pass data from child to parent?
+18. controlled component vs uncontrolled component

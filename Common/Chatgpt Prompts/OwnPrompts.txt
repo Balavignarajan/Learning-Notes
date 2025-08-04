@@ -1,11 +1,56 @@
 What is UseState in React ?
-could you explain I am new to react i have 0 knowledge in react explain step  by step 
+could you explain I am new to react i have 0 knowledge in react explain step by step
 what is UseState?
 why we use useState?
 where we use?
 in real time code?
 beginner to advance level UseState using
 
-explain me easy and understanble words 
+explain me easy and understanble words
 
 -------------------------------------------------------------------------------
+
+What is UseEffect in React ?
+could you explain I am new to react i have 0 knowledge in react explain step by step
+what is UseEffect?
+why we use useEffect?
+where we use?
+in real time code?
+beginner to advance level UseEffect using
+
+explain me easy and understanble words
+**Act as a study coach. Teach me useEffect in react using real life analogies and memory tricks. Make it so i never forget it again in my life time
+
+-------------------------------------------------------------------------------------------------------------
+🧭 Roadmap to Understand useEffect Clearly
+
+What is useEffect?
+
+Why do we need it?
+
+When does it run?
+
+How is it used?
+
+Different types of useEffect
+
+Real-life examples
+
+Memory tricks + Quiz
+
+Mini projects to practice
+
+Let’s start at the very beginning — like I’m teaching you in a real classroom.
+
+----------------------------------------------------------------------------------------------
+I am struggling to understand (topic) in (javaScript/react).
+Can you explain it in very simple language like i'm 12 years old ?
+give me a real life example to relate it .
+Also, show me a very basic code snippet using (topic).
+Explain what each line of code does step by step.
+
+---------------------------------------------------------------------------------------------
+explain javaScript Array methods: map,filter,reduce,find,forEach,some,every,sort,slice and splice and important array methods.
+Use simple beginer-freindly language with step by step explanations.
+Include real-life examples (like shopping cart, grades, tasks, etc..) for each methods.
+Make it easy to understand with small code snippets and explanations.
