@@ -1,0 +1,49 @@
+https://chatgpt.com/share/68947062-9b78-8005-a74a-647e1da8add6
+
+
+check the link for project setup + build for todo app
+---------------------------------------------------------------
+
+
+
+
+
+✅ Correct Step-by-Step Guide to Build APK (Using Expo + EAS)
+✅ Step 1: Login to Expo (You already did this ✅)
+
+>> npx expo login
+
+✔ Email or username … balavignarajan.p@synamen.com
+✔ Password … Bala@2002
+
+✅ Step 2: Install eas-cli (Only once per system)
+
+>> npm install -g eas-cli
+
+Think of eas-cli as Expo's APK chef 👨‍🍳
+✅ Step 3: Configure your project for EAS
+
+>> eas build:configure
+
+It creates an eas.json file → This file tells Expo how to build your APK.
+✅ Step 4: Build your Android APK
+
+>> eas build -p android --profile preview
+
+    -p android = Platform is Android
+
+    --profile preview = Build APK (not AAB)
+
+👉 After this, wait patiently. It uploads your app, then Expo builds it on the cloud.
+✅ Step 5: Download APK
+
+After build finishes, you’ll get a link like:
+
+✔ Build complete!
+🔗 Install APK: https://expo.dev/accounts/yourname/builds/abcd1234
+
+Open the link → Download the APK → Share or install on phone!
+
+
+
+--------------------------------------------------------------------

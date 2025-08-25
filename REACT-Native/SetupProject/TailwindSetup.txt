@@ -1,0 +1,102 @@
+Tailwind Typescript setups
+
+step = 0 https://www.nativewind.dev/docs/getting-started/installation#7-typescript-setup-optional
+check this documentation
+
+
+step 1 = npx create-expo-app@latest
+step 2 = ✔ What is your app named? … AwesomeProject
+step 3 = - cd AwesomeProject 
+step 3.1 = npm run reset-project
+step 4 = 1. Install Nativewind =
+npx expo install nativewind react-native-reanimated@~3.17.4 react-native-safe-area-context@5.4.0
+npx expo install --dev tailwindcss@^3.4.17 prettier-plugin-tailwindcss@^0.5.11
+step 5 = 2. Setup Tailwind CSS 
+file create = tailwind.config.js
+[
+    /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./App.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}",   // 👈 Important: this scans your app folder
+    "./components/**/*.{js,jsx,ts,tsx}"
+  ],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+]
+step 6 = file create =  global.css 
+[
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+]
+
+step 7 = file create babel.config.js
+[
+    module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: [
+      ["babel-preset-expo", { jsxImportSource: "nativewind" }],
+      "nativewind/babel",
+    ],
+  };
+};
+]
+
+step 8 = file create metro.config.js
+[
+ // metro.config.js
+const { getDefaultConfig } = require("expo/metro-config");
+const { withNativeWind } = require("nativewind/metro");
+
+const config = getDefaultConfig(__dirname);
+
+module.exports = withNativeWind(config, { input: "./global.css" });
+
+]
+
+step 9 = 5. Import your CSS file
+**import "./global.css"**
+ 
+export default App() {
+   Your App or index optional layout
+}
+
+step 10 = 6. Modify your app.json
+[
+    {
+  "expo": {
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
+]
+
+step 11 = 7. TypeScript setup (optional)
+= file create nativewind-env.d.ts
+[
+    /// <reference types="nativewind/types" />
+    
+]
+
+step 12 = try in app js
+[
+    import "./global.css"
+import { Text, View } from "react-native";
+ 
+export default function App() {
+  return (
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-xl font-bold text-blue-500">
+        Welcome to Nativewind!
+      </Text>
+    </View>
+  );
+}
+]

@@ -1,0 +1,34 @@
+1. ***SafeAreaView***
+[
+import { SafeAreaView, Text } from "react-native-safe-area-context";
+
+<SafeAreaView>
+<Text>Hello World</Text>
+</SafeAreaView>
+
+>>
+**SafeAreaView is just like a View, but it adds padding automatically so that content stays inside safe zones.
+**Prevents overlap with:
+**iPhone notch
+**Status bar
+**Home indicator area (bottom)
+]
+----------------------------------------------------------------------------------------------------------------
+2. ***View***
+[
+import { View, Text } from "react-native";
+
+export default function Demo() {
+  return (
+    <View style={{ flex: 1, backgroundColor: "lightblue" }}>
+      <Text>Hello World</Text>
+    </View>
+  );
+}
+🔹 View
+View is the basic building block in React Native.
+Think of it like a div in web development.
+It does not care about notches, status bars, or safe zones.
+Whatever you put inside, it renders at the exact position (top, left, etc.).
+On an iPhone with a notch → the text might overlap with the notch or status bar.
+]

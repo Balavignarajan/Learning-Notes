@@ -1,0 +1,4 @@
+1. learn core components in react native . Basic components.
+2. styling components
+3. Understanding Layouts
+4. ( Button,FlatList,StyleSheet,Text,TextInput,View,) check this ?

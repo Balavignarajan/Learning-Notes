@@ -1,0 +1,138 @@
+1 = using expo With Typescript default setups
+
+step 1 = npx create-expo-app@latest
+step 2 = ✔ What is your app named? … AwesomeProject
+step 3 = - cd AwesomeProject
+step 4 = - npx expo start (this will show qr) 
+step 4.1 = npx expo start --web (optional)
+step 5 = download expo go in playstore and scan qr (in ios qr scanner will not show so go to camera scan that will redirect expo go app)
+step 6 = npm run reset-project 
+step 7 = check   app foler/ index.ts and change something and check in mobile
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+2 = using expo With JavaScript
+
+In terminal :
+step 1 = expo init project-name
+step 2 = Choose Blank (JavaScript) when it asks
+step 3 = cd project-name
+step 4 =  npx expo start (Or) npx expo start --android
+step 5 = check App.js change something and check
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+3. Build Apk file
+
+step 1 = npx expo login
+step 2 = login with
+         Mail = balavignarajan.p@synamen.com
+         Password = Bala@2002
+step 3 = TodoApp$ npx expo export --dev-client
+npx eas build -p android
+step 4 = eas build:configure
+
+
+
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+//And 
+step 1 (terminal to start the android application) = emulator -avd MyDevice &
+or 
+step 1 = emulator -avd LightAVD -accel kvm -no-boot-anim -gpu swiftshader_indirect -memory 1536 -cores 2 -noaudio -no-snapshot -no-metrics &
+
+step 2 = (in vs code project folder) = npx expo start --android
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------- -
+-----------------------------------------------------------------------
+--------------------------------------------------------------------
+---Chatgpt---
+
+Great question! Here's a **step-by-step guide** for how to start working on your **React Native (Expo) project and Android emulator** from a **fresh system reboot** – using only the **terminal** on Linux.
+
+---
+
+## ✅ 1. **Start Android Emulator**
+
+> ⚠️ Do this first, emulator takes time to boot.
+
+### Step 1: Open terminal and run:
+
+```bash
+emulator -avd LightAVD -accel kvm -no-boot-anim -gpu swiftshader_indirect -memory 1536 -cores 2 -noaudio -no-snapshot &
+```
+
+This will:
+
+* Start your emulator in background
+* Use the `LightAVD` virtual device (replace if your device name is different)
+
+> 💡 You can use just `emulator -avd LightAVD` if you don’t need custom options.
+
+---
+
+## ✅ 2. **Start Expo Project**
+
+Open another terminal tab/window, then:
+
+```bash
+cd /home/synamen/Documents/WorkSpace2/ReactNative\ Projects/AwesomeProject
+npx expo start --android
+```
+
+* This will:
+
+  * Start **Metro Bundler**
+  * Automatically launch **Expo Go in your emulator** (if installed)
+
+---
+
+## ✅ 3. (Optional) If Expo Go Doesn’t Open Automatically
+
+Run this in terminal to manually open your app in Expo Go:
+
+```bash
+adb shell am start -a android.intent.action.VIEW -d exp://localhost:19000
+```
+
+---
+
+## 💡 Pro Tip: Create a Bash Script to Start Everything
+
+### Create a file `start-project.sh`:
+
+```bash
+#!/bin/bash
+
+# Step 1: Start Emulator
+echo "Starting Android Emulator..."
+emulator -avd LightAVD -accel kvm -no-boot-anim -gpu swiftshader_indirect -memory 1536 -cores 2 -noaudio -no-snapshot &
+
+# Step 2: Wait 20 seconds for emulator to boot
+sleep 20
+
+# Step 3: Go to your project folder
+cd /home/synamen/Documents/WorkSpace2/ReactNative\ Projects/AwesomeProject
+
+# Step 4: Start Expo project
+npx expo start --android
+```
+
+### Then run:
+
+```bash
+chmod +x start-project.sh
+./start-project.sh
+```
+
+---
+
+Let me know if you want me to generate this script file for you automatically.
+
