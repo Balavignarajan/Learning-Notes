@@ -1,0 +1,36 @@
+1. What is Amazon Q?
+
+Amazon Q is a generative AI assistant developed by Amazon Web Services (AWS) specifically for enterprise environments.
+
+2. 🧑‍💻 What is Amazon Q Developer?
+
+Think of it like a smart coding helper created by Amazon (AWS).
+It’s similar to ChatGPT, but it’s focused on programming and AWS cloud development.
+
+It’s built to sit inside the tools developers already use (like VS Code, JetBrains, Eclipse, or even the terminal) and help with tasks such as:
+
+Writing code
+
+Debugging errors
+
+Understanding someone else’s code
+
+Fixing security issues
+
+Optimizing AWS services you use
+
+------------------------------------____________________----------------------------
+
+3. ✨ What Can It Do? (Beginner Examples)
+
+Let’s say you’re learning coding or cloud:
+
+>>Code Suggestions
+
+keypad shortcut for suggestion = alt + c
+
+You type: function getUserData(
+
+Amazon Q Developer suggests the rest of the code.
+
+Similar to autocomplete, but smarter because it understands context.

@@ -1,0 +1,48 @@
+setup = extenstion amazonQ and login in amazon
+
+👉 >>If your focus is general software development across many languages and frameworks, GitHub Copilot is best; 
+   >>if your focus is AWS-based cloud development, Amazon Q Developer is best.
+
+1. 
+ >>first of all the Amazon Q is a generative AI assistant developed by Amazon Web Services.
+ >>its like github co pilot in vscode. 
+ >>but copilot have usage limitation for free versions.
+ >>AmazonQ is free for basic usage 
+        -- 1,000 lines. code is free per month
+        -- 50 IDE interactions like chat panel and inline code editor per month
+        -- agent 10 chances per month to let the AI do full coding jobs for you
+                (eg:  create a todo list project using react).
+
+2. What can it do ?
+  >>Code Suggestions :
+     --You type: function getUserData( , the ai will tell the rest of code suggestion.
+        keypad shortcut is (alt + c)
+
+  >>Explaining Code : 
+      --You copy-paste a confusing piece of JavaScript and ask:
+             👉 “What does this function do?” in chat panel.
+  
+  >>Fixing Bugs :
+       --You get an error in JavaScript. do intentioanlyy in for loop eg and ask.
+          --You ask: “Why am I getting this error?”
+          --It explains the problem and suggests a fix.   
+
+3. Try Amazon Q in VS Code
+  >>1. Open any project folder (or create a new file).
+        --Create a new file → test.js
+        --Type
+             function addNumbers(a, b) {
+        Wait → Amazon Q will suggest: or not coming do alt + c
+       👉 That’s inline code suggestion.
+
+4. Ask Questions in Chat Panel.
+      >> copy past any function and ask explain the code
+      >> Tell the file name and ask explain the file.
+      >> copy past any error and ask why am i getting this error error.
+      >> If you want add or delete file tell in chat pannel.
+
+5. Agent Mode
+      >> This is the most powerful feature of Amazon Q.
+      >> It can create a full project for you.
+      >> You can give instruction like:
+      >> 

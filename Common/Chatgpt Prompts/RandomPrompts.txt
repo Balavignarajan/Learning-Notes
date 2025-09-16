@@ -1,0 +1,17 @@
+🧩 Step 6. Learn Good Prompts (Prompt Engineering Lite)
+The quality of your question = quality of the answer.
+Bad: “Fix my code.”
+Good: “Fix this error in my Node.js Express app. The error is: X. I want it to return JSON.”
+👉 Practice writing clear, specific prompts.
+Improve your prompting skills
+
+-----------------------------_____________________________-----------------------------------
+
+1. Why am I getting this error in Node.js?
+2. Refactor code (make it cleaner without changing logic).
+3. Paste messy code → ask: “Refactor this to be cleaner and beginner-friendly.”
+4. Suggest a React folder structure for a blog app.
+5. What does this code do ?
+6. Can you write a function to sort a list?
+7. Optimize this function for speed.
+8. Hai this is Bala.
