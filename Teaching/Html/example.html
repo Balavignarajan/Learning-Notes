@@ -1,103 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <b>Bold text</b>
-  <strong>Important bold text</strong> Also adds meaning for SEO
+<form>
+  <h2>Registration Form</h2>
 
- <br>
-  <i>Italic text</i>
-  <br>
-<em>Emphasized text</em> <!-- Adds emphasis meaning -->
+  <label>Full Name:</label>
+  <input type="text"  placeholder="Enter your full name"><br><br>
 
-<hr>
-<div>This is a block-level container.</div>
-<div>This is a block-level container.</div>
+  <label>Email:</label>
+  <input type="email" placeholder="Enter your email"><br><br>
 
-<span>This is inline text.</span>
-<span>This is inline text.</span>
+  <label>Password:</label>
+  <input type="password" placeholder="Enter password"><br><br>
 
-<div style="background-color: lightblue; padding: 10px; margin: 10px;">
-    <h2>Welcome to My Website</h2>
-    <p>This section has a blue background!</p>
-  </div>
+  <label>Gender:</label>
+  <input type="radio"  value="male"> Male
+  <input type="radio"  value="female"> Female <br><br>
 
-  <div style="background-color: lightgreen; padding: 10px; margin: 10px;">
-    <h2>Contact Me</h2>
-    <p>Email: bala@example.com</p>
-  </div>
+  <label>Choose your city:</label>
+  <select name="city">
+    <option>Chennai</option>
+    <option>Madurai</option>
+    <option>Coimbatore</option>
+  </select><br><br>
 
+  <label>Comments:</label><br>
+  <textarea  placeholder="Enter your comments here"></textarea><br><br>
 
-  <table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>City</th>
-  </tr>
-  <tr>
-    <td>Bala</td>
-    <td>21</td>
-    <td>Chennai</td>
-  </tr>
-  <tr>
-    <td>Kiran</td>
-    <td>22</td>
-    <td>Madurai</td>
-  </tr>
-</table>
+  <input type="checkbox" name="agree"> I agree to terms & conditions<br><br>
+
+  <button type="submit">Register</button>
+  <button type="reset">Clear</button>
+</form>
 
 
-<table border="1" cellpadding="10" cellspacing="5" align="center" width="60%">
-  <tr>
-    <th>Product</th>
-    <th>Price</th>
-    <th>Quantity</th>
-  </tr>
-  <tr>
-    <td>Apple</td>
-    <td>₹50</td>
-    <td>10</td>
-  </tr>
-  <tr>
-    <td>Banana</td>
-    <td>₹30</td>
-    <td>12</td>
-  </tr>
-</table>
+<label>Hobbies:</label><br>
+<input type="checkbox" value="reading"> Reading
+<input type="checkbox" value="music"> Music
+<input type="checkbox" value="traveling"> Traveling
+
+<label>Upload your photo:</label>
+<input type="file">
 
 
+<label>Pick your favorite color:</label>
+<input type="color">
 
 
-<hr>
-<table border="1" cellpadding="8" width="70%">
-  <thead>
-    <tr>
-      <th>Subject</th>
-      <th>Marks</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Math</td>
-      <td>95</td>
-    </tr>
-    <tr>
-      <td>Science</td>
-      <td>88</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Total</th>
-      <th>183</th>
-    </tr>
-  </tfoot>
-</table>
+<label>Volume:</label>
+<input type="range" min="0" max="100">
 
+<br>
+<label>Country:</label>
+<input type="text" value="India" readonly>
 
-</body>
-</html>
+<br>
+<label>Age:</label>
+<input type="number" min="1" max="10">
+
